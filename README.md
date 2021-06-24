@@ -66,11 +66,15 @@ Always force and fix issues and incidents to PROD. Rollback should not be perfor
 
 ### Highlevel CI
 
+![CI](resources/img/cncf_sec_figure3.png)
+
 Developer push code to git from MR. This triggers (Webhook) a build. Compile->Test->Build (artifact/docker image)->Push Artifact.
 
 Infrastructure components should be coded in Terraform or other IaC (cloud agnostic) language. MR into master triggers a terraform execution with the delta.
 
 ### Highlevel CD
+
+![CD](resources/img/cncf_sec_figure4.png)
 
 Spinnaker observes new artifacts from container registry.
 
@@ -92,7 +96,7 @@ Applications, clusters, and server groups are the key concepts Spinnaker uses to
 ### Spinnaker Application Deployment (pipelines)
 Manage the CD [pipeline](https://spinnaker.io/concepts/pipelines/).
 
-![spinnaker_clusters](resources/images/spinnaker_pipelines.png)
+![spinnaker_pipelines](resources/images/spinnaker_pipelines.png)
 
 ### BLUE/GREEN deployment approach
 
@@ -121,6 +125,9 @@ Minimum is to schedule daily Backup of datatype definitions.
 The strategy is to give as little authority as possible to consumers.
 
 Pre-defined policies should be used and if not existing one should be created and used. For further detail see Pillar: Security.
+
+# Security Runtime Environment
+![SRE](resources/img/cncf_sec_figure5.png)
 
 # Alerts and Monitoring
 Use the Elasticsearch (ELK) stack which fulfill the Observability pattern.
@@ -210,3 +217,10 @@ Areas:
 * [Here is an awesome video showing the concept and strength of Spinnaker](https://youtu.be/aubbyQ60W2U)
 * [Hybrid multi-cloud strategies using Terraform OSS with Azure](https://channel9.msdn.com/Events/Build/2018/BRK2121?ocid=player)
 * [HLD tool](https://lucid.app/lucidchart/8cf3986c-5c88-47c6-a9d4-ece4fafdf849/edit?beaconFlowId=41E3EA1F996DB883&page=0_0#)
+
+# Bonus
+* [CNCF_cloud-native-security-whitepaper](https://github.com/cncf/tag-security/blob/main/security-whitepaper/CNCF_cloud-native-security-whitepaper-Nov2020.pdf)
+* [The Cloud Native Trail Map](https://github.com/cncf/trailmap/blob/master/CNCF_TrailMap_latest.pdf)
+* [CNCF Cloud Native Landscape](https://landscape.cncf.io/images/landscape.pdf)
+* [CNCF Serverless Landscape](https://landscape.cncf.io/images/serverless.pdf)
+* [compare-nats](https://docs.nats.io/compare-nats)
