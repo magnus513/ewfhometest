@@ -1,0 +1,18 @@
+Problem Statement/Scenario: Consider a Service Bus like RabbitMQ or Nats.io which caters for millions of users.
+
+Task: Create a system architecture, deployment process, and monitoring solution.
+Consider you need to deploy both the infrastructure as well as the application on cloud.
+The deployment should be agnostic of cloud provider. Follow the below points and try to cover as many as possible; you can add any from your side if there is anything missing
+
+Some suggested deliverables include:
+
+System Architecture Diagram
+Deployment (Infrastructure & Application) methodology
+Deployment automation tools (Infrastructure & Application)
+Deployment pipelines (Infrastructure & Application)
+Backups policy
+Security policy and implementation
+Alerts and Monitoring
+Logging/Metrics
+HA/Scaling
+OS Hardening

@@ -120,14 +120,17 @@ A data directory contains two types of data: definitions (metadata, schema/topol
 
 Minimum is to schedule daily Backup of datatype definitions.
 
+# Security Runtime Environment
+
+The Runtime phase comprises three critical areas: compute, access, and storage.
+
+![SRE](resources/img/cncf_sec_figure5.png)
+
 # Security policy and implementation
 
 The strategy is to give as little authority as possible to consumers.
 
 Pre-defined policies should be used and if not existing one should be created and used. For further detail see Pillar: Security.
-
-# Security Runtime Environment
-![SRE](resources/img/cncf_sec_figure5.png)
 
 # Alerts and Monitoring
 Use the Elasticsearch (ELK) stack which fulfill the Observability pattern.
@@ -220,6 +223,7 @@ Areas:
 
 # Bonus
 * [CNCF_cloud-native-security-whitepaper](https://github.com/cncf/tag-security/blob/main/security-whitepaper/CNCF_cloud-native-security-whitepaper-Nov2020.pdf)
+* [Cloud Native Security Whitepaper](https://github.com/cncf/tag-security/blob/main/security-whitepaper/cloud-native-security-whitepaper.md)
 * [The Cloud Native Trail Map](https://github.com/cncf/trailmap/blob/master/CNCF_TrailMap_latest.pdf)
 * [CNCF Cloud Native Landscape](https://landscape.cncf.io/images/landscape.pdf)
 * [CNCF Serverless Landscape](https://landscape.cncf.io/images/serverless.pdf)
